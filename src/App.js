@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-// import hero from "./images/pattern-bg.png";
+
 import hero from "./images/hero.png";
 import arrow from "./images/icon-arrow.svg";
 import Markerposition from "./components/MarkerPosition";
@@ -56,7 +56,7 @@ function App() {
     <>
       <section>
         <div className="absolute w-full -z-10">
-          <img src={hero} alt="" className="w-full h-80" />
+          <img src={hero} alt="" className="w-full h-80 object-cover" />
         </div>
 
         <div className="max-w-xl mx-auto p-8">
@@ -88,7 +88,7 @@ function App() {
           <>
             <article className="p-8">
               <div
-                className="bg-white rounded-xl p-8 shadow max-w-6xl mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:text-left -mb-10 relative lg:-mb-32"
+                className="bg-white rounded-xl p-8 shadow max-w-6xl mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:text-left -mb-10 relative lg:-mb-48"
                 style={{
                   zIndex: 10000,
                 }}
